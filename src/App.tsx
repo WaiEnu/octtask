@@ -5,7 +5,7 @@ import TaskList from './component/TaskList';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="lex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
       <TaskInput />
       <TaskList />
     </div>

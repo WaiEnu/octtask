@@ -9,10 +9,10 @@ const TaskList: React.FC = () => {
   const { tasks } = useSelector((state: RootState) => state.tasks)
 
   return (
-    <div className="inner">
+    <div className="container mx-auto">
     {
       tasks.length <= 0 ? '登録されたTODOはありません。' :
-      <ul className="task-list">
+      <ul className="max-w-md mx-auto my-10 p-0 ">
         { tasks.map(task => (
           <TaskItem key={task.id} task={task} />
         )) }
